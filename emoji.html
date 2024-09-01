@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji hover effect</title>
+    <style>
+        body{
+            background-color: rgb(163, 161, 161);
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            margin: 0;
+        }
+        .emojis{
+            font-size: 75px;
+            margin-top: 0px;
+            filter: grayscale(100%);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .emojis:hover{
+            font-size: 200px;
+            filter: none;
+        }
+        body:hover{
+                background-color: gold;
+            }
+    </style>
+</head>
+<body>
+    <div class="emojis">😊</div>
+    <script src="function.js"></script>
+</body>
+</html>
